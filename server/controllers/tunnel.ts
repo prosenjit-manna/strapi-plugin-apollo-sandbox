@@ -23,7 +23,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
     });
 
     ctx.body = {
-      url: `${tunnel.url}${ENDPOINT}`,
+      url: `http://localhost:1338/graphql`,
     };
   },
   async closeTunnel(ctx) {
